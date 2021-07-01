@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Django for for send email from django to gmail</title>
+
+	<style>
+
+form{
+	width: 50%;
+	background-color: ;
+	/*color:white;*/
+	margin:auto;
+	border:2px solid black;
+}
+
+h1{
+
+	width:40%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+form div{
+	width:80%;
+	margin: auto;
+
+}
+</style>
+</head>
+<body>
+	<div>
+
+<h1>Form To send Mail from Django form to Gmail</h1>
+		<form method="POST" action="">
+			{% csrf_token %}
+			<div>
+<label for="FName">Enter Your FName Here
+	
+</label>
+<input type="Text" id="FName" name="Fname" placeholder="Your Name" required="">
+		
+
+<input type="Text"  id="LName" name="Lname" placeholder="Your LName" required="">
+			</div>
+<br>
+			<div>
+<label for="email">Enter Your E-mail
+	
+</label>
+<input type="email" id="email" name="email" placeholder="Your email" required="">
+			</div>
+			<br>
+
+<div>
+<label for="Gender">Your Gender
+	
+</label>
+Male:<input type="radio" id="gender" name="gender">Female:<input type="radio" id="gender" name="gender"  >Other:<input type="radio" id="gender" name="gender">
+			</div><br>
+
+			<div>
+<label for="Job">Your Choice
+	
+</label>
+<select id="job" name="job" >
+	<option name="Soft Eng">Software Engineer</option>
+	<option name="Maneger">manager</option>
+	<option name="emp">Employee</option>
+
+</select>
+			</div><br>
+
+			
+			<div>
+
+				<label for="Mesage">
+					About Your Self
+				</label>
+				<br>
+
+				<textarea Type="text" name="Mesage" id="Mesage" placeholder="Mesage" rows="10" cols="70"></textarea>
+			</div><br>
+
+			<center>
+			<div>
+ <button type="submit" >Submit</button>
+ <button type="reset">Reset It</button>
+</div>
+</center>
+
+
+		</form>
+	</div>
+</body>
+</html> -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>send mail from djago to gmail</title>
+    <style>
+form{
+
+	width:50%;
+	margin :auto;
+	margin-top:200px;
+}
+    </style>
+  </head>
+  <body>
+    <form action="" method="POST">
+    	{% csrf_token %} 
+  <label for="Name">Nmae</label>
+  <input type="Text" id="Name" name="Fname" placeholder="Enter You Fname">
+ <label for="Mail">Email</label>
+  <input type="email" id="Mail" name="Mail" placeholder="Enter You E-mail">
+   <label for="Country">Country</label>
+   <select id="Country" name="Country">
+   	<option value="Autralia" >Australia</option>
+<option value="una" >Una</option>
+<option value="IndiA" >India</option>
+
+   </select>
+
+ <label for="Phone">Enter Your Phone</label>
+  <input type="nomber" id="Phone" name="phone" placeholder="Enter You Phone">
+  
+ <label for="Key">P-Key</label>
+  <input type="text" id="key" name="key" placeholder="Enter You Product Key">
+
+ <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
